@@ -1,0 +1,92 @@
+* {
+  font-family: 'Trebuchet MS';
+  font-size: large;
+}
+
+html {
+  background-image: url("images/background.jpg");
+}
+
+.title_div {
+  margin: 1cm;
+  margin-bottom: 5mm;
+  padding: 2mm;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+
+.list_div {
+  margin: 1cm;
+  margin-top: 0mm;
+  max-height: 70%;
+  overflow:auto;
+}
+
+.input_div {
+  position:absolute;
+  bottom:1cm;
+  right:1cm;
+  left:1cm;
+}
+
+.list_table,.input_table {
+  width:100%
+}
+
+.item {
+  padding: 2mm;
+  border-radius: 2mm;
+  background-color: aliceblue;
+}
+
+.input {
+  padding: 2mm;
+  border-radius: 2mm;
+  background-color: rgb(192, 207, 226);
+}
+
+.due_date,.close_item {
+  display: inline;
+}
+
+.check_item,.close_item,.submit_input {
+  float: right;
+}
+
+.check_item_button,.close_item_button {
+  border: none;
+  background-color: aliceblue;
+}
+
+.submit_button {
+  border: none;
+  background-color: rgb(192, 207, 226);
+}
+
+.check_item_button:hover,.close_item_button:hover,.submit_button:hover {
+  /* box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2); */
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+.check_item_button > .fa + .fa,
+.check_item_button:hover > .fa {
+  display: none;
+}
+.check_item_button:hover > .fa + .fa {
+  display: inherit;
+}
+
+.due_date {
+  font-size: small;
+}
+
+#input_text,#input_date {
+  border: none;
+  border-radius: 2mm;
+  resize: none;
+}
+
+#i1 > .check_item > .check_item_button > .fa-square-o { visibility: collapse;}
